@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="Wars">
+<head>
+	<!--bosststrap.css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rammetto+One&display=swap" >
+      <meta charset="utf-8">
+	<title>WORLD OF WARCRAFT</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="rr">
+
+      <div class="container-fluid  david">
+      	<div class="row altoTotal">
+      		<div class="col-md-12 centrado ty">
+      			<center>
+      			<h1>WORLD OF WARCRAFT</h1>
+      			</center>
+      		</div>	
+      	</div>
+
+      </div>
+      <div class="container-fluid">
+      	<div class="row ">
+      		<div class="col-md-3 pad " ng-repeat="p in Listado War">
+      			<div class="nd">
+      				<div>
+      				 <img class="img-responsive " src="{{p.data.sprites.front_default}}" alt="Wars"></div>
+      				<div class="">
+      					War:
+                                    {{ p.data.name }}
+                              </div>
+      			</div>
+      		</div>	
+
+
+      	</div>
+      </div>
+            
+   
+<!--jQuery.js-->
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+     <script src="js/script.js"></script>
+
+</body>
+</html>
